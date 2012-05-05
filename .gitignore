@@ -1,6 +1,7 @@
-*/identity.json
+identity.json
 */development
 */release
 */.template
 */forge-error.log
 */local_config.json
+*/.*.swp
