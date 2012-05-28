@@ -5,3 +5,5 @@ identity.json
 */forge-error.log
 */local_config.json
 */.*.swp
+node_modules/
+
