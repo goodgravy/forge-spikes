@@ -6,4 +6,4 @@ identity.json
 */local_config.json
 */.*.swp
 node_modules/
-
+*/.lib/*

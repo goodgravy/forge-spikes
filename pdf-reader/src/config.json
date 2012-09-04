@@ -1,0 +1,16 @@
+{
+	"config_version": "3",
+	"name": "PDF reader",
+	"author": "Trigger",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "Open a PDF in a modal view",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+		"file": true,
+		"tabs": true,
+		"tools": true
+	}
+}
