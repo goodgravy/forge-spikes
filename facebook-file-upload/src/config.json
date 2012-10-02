@@ -1,0 +1,26 @@
+{
+	"config_version": "3",
+	"name": "Facebook Photo Upload Demo",
+	"author": "james@trigger.io",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "Upload a photo from the device's gallery or camera to a Facebook user's albums.",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+		"contact": true,
+		"file": true,
+		"is": true,
+		"media": true,
+		"prefs": true,
+		"request": {
+			"permissions": ["http://*/*", "https://*/*"]
+		},
+		"tools": true,
+		"reload": true,
+		"facebook": {
+			"appid": "YOUR APP ID"
+		}
+	}
+}
