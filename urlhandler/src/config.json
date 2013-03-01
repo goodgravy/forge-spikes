@@ -1,0 +1,30 @@
+{
+	"author": "james@trigger.io", 
+	"config_version": "2", 
+	"description": "An empty app created by default", 
+	"modules": {
+		"contact": true, 
+		"event": true, 
+		"file": true, 
+		"is": true, 
+		"logging": {
+			"level": "DEBUG"
+		}, 
+		"media": true, 
+		"prefs": true, 
+		"reload": true, 
+		"request": {
+			"permissions": [
+				"http://*/*", 
+				"https://*/*"
+			]
+		}, 
+		"tools": true, 
+		"urlhandler": {
+			"scheme": "myschema"
+		}
+	}, 
+	"name": "ooblada", 
+	"platform_version": "v1.4", 
+	"version": "0.1"
+}
