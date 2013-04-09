@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script>
+function getJSON (url) {
+	$.ajax({
+		dataType: "json",
+		url: url,
+		success: function (res) {
+			forge.logging.info(url + ' success: '+JSON.stringify(res));
+		},
+		error: function (jq, status, error) {
+			forge.logging.info(url + ' error: '+JSON.stringify([jq, status, error]));
+		}
+	});
+}
+$(function () {
+	getJSON('test.json');
+	forge.file.getLocal('test.json', function (file) {
+		forge.file.URL(file, function (url) {
+			getJSON(url);
+		});
+	});
+	forge.file.getLocal('test.json', function (file) {
+		forge.file.string(file, function (string) {
+			forge.logging.info('as string: '+string);
+		});
+	});
+});
+	</script>
+</head>
+<body>
+	<h1>INDEX</h1>
+	<a href="html/sub.html">to sub directory</a>
+</body>
+</html>
