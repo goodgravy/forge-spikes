@@ -1,0 +1,27 @@
+{
+	"config_version": "2",
+	"name": "Twitter OAuth",
+	"author": "james@trigger.io",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "An empty app created by default",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+		"is": true,
+		"request": {
+			"permissions": [
+				"http://*/*",
+				"https://*/*"
+			]
+		},
+		"tabs": true,
+		"tools": true,
+		"reload": true,
+		"parameters": {
+			"consumerKey": "RTF5M6lhAWuLLqzYYpYyAA",
+			"consumerSecret": "CLTKwJLr1gv2QHjXAWFE5OzKwx8ojkuM4gedGeJXnc"
+		}
+	}
+}
