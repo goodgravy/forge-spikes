@@ -111,6 +111,15 @@ function createOAuthHeader (method, url, parameters) {
 	return header;
 }
 
+/**
+Use this function to make signed requests to the Twitter API.
+
+method: HTTP method, e.g. POST, GET, ...
+url: the full, absolute URL, including query string parameters if required
+data: a hash of key:value parameters to be included in the body
+success: callback to be executed if the request went well
+error: callback to be executed if the request went poorly
+*/
 function makeSignedRequest (method, url, data, success, error) {
 	var oAuthHeader = createOAuthHeader(method, url, data);
 
